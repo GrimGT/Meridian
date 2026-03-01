@@ -201,7 +201,7 @@
 		(uuid "183c517a-081c-4ff0-990b-e419f1aab16b")
 	)
 	(embedded_fonts no)
-	(model "C:/Users/Conno/Documents/code/Meridian-RTLS/boards/libs/ABM8-38.400MHZ-12-D1G-T.3dshapes/ABM8-38.400MHZ-12-D1G-T.step"
+	(model "${KIPRJMOD}/libs/3dshapes/ABM8-38.400MHZ-12-D1G-T.step"
 		(offset
 			(xyz 0 0 0)
 		)

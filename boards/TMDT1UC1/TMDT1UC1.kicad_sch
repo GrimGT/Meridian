@@ -3661,6 +3661,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Sensor_Motion:LIS2DH"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -5563,6 +5670,18 @@
 		)
 		(uuid e836541c-845f-44d8-8b2e-48a5cdd456fe)
 	)
+	(rectangle
+		(start 281.94 190.5)
+		(end 347.98 238.76)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid f5289fa8-6794-4bc4-9f89-5d0b52c6dbe8)
+	)
 	(text "POWER INPUT"
 		(exclude_from_sim no)
 		(at 226.314 196.596 0)
@@ -5577,7 +5696,7 @@
 	)
 	(text "50Ω Trace"
 		(exclude_from_sim no)
-		(at 154.94 140.97 0)
+		(at 140.97 115.57 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5598,6 +5717,18 @@
 			)
 		)
 		(uuid "3f6a851f-0765-4718-9b33-1b1a762ba6dc")
+	)
+	(text "MOUNTS"
+		(exclude_from_sim no)
+		(at 297.434 196.342 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "5730543a-97b2-41b1-9040-43ca6da9231e")
 	)
 	(text "PWR REGULATION"
 		(exclude_from_sim no)
@@ -5660,6 +5791,12 @@
 			)
 		)
 		(uuid "bc6944eb-591a-4fbd-99ad-b1027f6b7891")
+	)
+	(junction
+		(at 309.88 220.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0488f385-b555-4dba-b0d4-d15c76d9611a")
 	)
 	(junction
 		(at 267.97 73.66)
@@ -5998,6 +6135,12 @@
 		(uuid "de5026aa-15a4-4c5c-ad5e-04d108b05c58")
 	)
 	(junction
+		(at 309.88 210.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e08890b3-c138-4e5a-9dec-8cfb00fb203b")
+	)
+	(junction
 		(at 78.74 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6038,6 +6181,10 @@
 	(no_connect
 		(at 60.96 134.62)
 		(uuid "1ab1ca8b-63db-4d3e-be8e-402431659f93")
+	)
+	(no_connect
+		(at 147.32 88.9)
+		(uuid "1dde8d19-a854-4b84-ac58-0817771ebf4f")
 	)
 	(no_connect
 		(at 167.64 220.98)
@@ -6226,6 +6373,16 @@
 			(type default)
 		)
 		(uuid "04391603-8b3b-45f9-a455-a137ddac2e65")
+	)
+	(wire
+		(pts
+			(xy 309.88 220.98) (xy 309.88 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "057470ee-a5eb-43cf-85aa-cfcfab06ec45")
 	)
 	(wire
 		(pts
@@ -6439,6 +6596,16 @@
 	)
 	(wire
 		(pts
+			(xy 309.88 210.82) (xy 317.5 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21c063e6-749b-477b-a6c3-6a13a4b40fe0")
+	)
+	(wire
+		(pts
 			(xy 86.36 53.34) (xy 96.52 53.34)
 		)
 		(stroke
@@ -6476,6 +6643,26 @@
 			(type default)
 		)
 		(uuid "29333d1e-9383-486e-a77d-dc5f8cf3d9c8")
+	)
+	(wire
+		(pts
+			(xy 309.88 210.82) (xy 309.88 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2981ebc4-0bbf-4cb8-8689-7844ccbfa7b8")
+	)
+	(wire
+		(pts
+			(xy 302.26 220.98) (xy 309.88 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29ed689c-5f8a-4f5a-acfd-728a0db0978b")
 	)
 	(wire
 		(pts
@@ -6729,6 +6916,16 @@
 	)
 	(wire
 		(pts
+			(xy 142.24 88.9) (xy 142.24 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45a1e5f7-c18a-4e0f-8651-f02c6d804db8")
+	)
+	(wire
+		(pts
 			(xy 83.82 73.66) (xy 83.82 76.2)
 		)
 		(stroke
@@ -6946,16 +7143,6 @@
 			(type default)
 		)
 		(uuid "62e4d16d-fb58-4bcc-9f8a-fd789583fac9")
-	)
-	(wire
-		(pts
-			(xy 142.24 121.92) (xy 142.24 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6348d1a6-f3bb-417b-9d5b-34b529378779")
 	)
 	(wire
 		(pts
@@ -7229,16 +7416,6 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 142.24) (xy 172.72 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89541ce5-9f68-436a-9e04-880267e53918")
-	)
-	(wire
-		(pts
 			(xy 279.4 111.76) (xy 292.1 111.76)
 		)
 		(stroke
@@ -7389,6 +7566,16 @@
 	)
 	(wire
 		(pts
+			(xy 302.26 210.82) (xy 309.88 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95b35588-eedd-4b9f-a781-96da988f2adb")
+	)
+	(wire
+		(pts
 			(xy 45.72 149.86) (xy 45.72 147.32)
 		)
 		(stroke
@@ -7479,6 +7666,16 @@
 	)
 	(wire
 		(pts
+			(xy 309.88 220.98) (xy 317.5 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f0ad699-d23f-42eb-a193-13178ed369af")
+	)
+	(wire
+		(pts
 			(xy 22.86 50.8) (xy 33.02 50.8)
 		)
 		(stroke
@@ -7496,16 +7693,6 @@
 			(type default)
 		)
 		(uuid "a067dce6-618c-4ac0-8350-1a750af7abd7")
-	)
-	(wire
-		(pts
-			(xy 137.16 90.17) (xy 137.16 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1364f1a-d0dd-4088-94ac-2be1b8087a4d")
 	)
 	(wire
 		(pts
@@ -7546,6 +7733,16 @@
 			(type default)
 		)
 		(uuid "a5a598c1-577f-457d-be2b-9c0f2c6ce87b")
+	)
+	(wire
+		(pts
+			(xy 152.4 142.24) (xy 142.24 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5ebbccd-c084-4bb8-8715-d43dd7633322")
 	)
 	(wire
 		(pts
@@ -7969,6 +8166,16 @@
 	)
 	(wire
 		(pts
+			(xy 157.48 142.24) (xy 172.72 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da6a9fc2-1ebd-4b27-b369-a8f1448acd42")
+	)
+	(wire
+		(pts
 			(xy 200.66 43.18) (xy 203.2 43.18)
 		)
 		(stroke
@@ -8196,16 +8403,6 @@
 			(type default)
 		)
 		(uuid "fbd46895-807b-4945-8913-9f74ca9c91b8")
-	)
-	(wire
-		(pts
-			(xy 142.24 90.17) (xy 142.24 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fcf60d33-a4ff-4ab7-bd73-12e7687ea126")
 	)
 	(wire
 		(pts
@@ -8788,7 +8985,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 172.72 50.8 0)
 			(effects
 				(font
@@ -8856,7 +9053,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 154.94 101.6 0)
 			(effects
 				(font
@@ -8992,7 +9189,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 119.38 55.88 0)
 			(effects
 				(font
@@ -9393,7 +9590,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 208.28 40.64 0)
 			(effects
 				(font
@@ -9562,6 +9759,73 @@
 			(project "TMDT1UC1"
 				(path "/7e70e283-abbb-484b-a110-f07ee4f07f76"
 					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 320.04 210.82 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "209860ba-6140-4692-a074-285c96888c83")
+		(property "Reference" "H2"
+			(at 323.85 209.5499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 323.85 212.0899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 320.04 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 320.04 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 320.04 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2061dcf8-be1c-4e14-a42c-d261cac42525")
+		)
+		(instances
+			(project "TMDT1UC1"
+				(path "/7e70e283-abbb-484b-a110-f07ee4f07f76"
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -10174,7 +10438,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 284.48 165.862 90)
 			(effects
 				(font
@@ -10359,7 +10623,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 86.36 55.88 0)
 			(effects
 				(font
@@ -10429,7 +10693,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 160.02 111.76 0)
 			(effects
 				(font
@@ -10496,7 +10760,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 158.75 43.18 0)
 			(effects
 				(font
@@ -10566,7 +10830,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 71.12 203.2 0)
 			(effects
 				(font
@@ -10636,7 +10900,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 33.02 53.34 0)
 			(effects
 				(font
@@ -10704,7 +10968,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_1210_3225Metric"
 			(at 173.99 38.1 0)
 			(effects
 				(font
@@ -10840,7 +11104,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 228.6 76.2 0)
 			(effects
 				(font
@@ -10910,7 +11174,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 267.97 76.2 0)
 			(effects
 				(font
@@ -11027,7 +11291,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "486b2fc8-15c6-49a2-aa7f-44ecf8573cc0")
 		(property "Reference" "C25"
 			(at 250.19 74.9362 0)
@@ -11047,7 +11310,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 247.65 76.2 0)
 			(effects
 				(font
@@ -11116,7 +11379,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 185.42 172.72 0)
 			(effects
 				(font
@@ -11186,7 +11449,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 73.66 53.34 0)
 			(effects
 				(font
@@ -11388,7 +11651,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 266.7 172.72 0)
 			(effects
 				(font
@@ -11592,7 +11855,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 146.05 152.4 0)
 			(effects
 				(font
@@ -11662,7 +11925,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 177.8 223.52 0)
 			(effects
 				(font
@@ -11706,7 +11969,7 @@
 	)
 	(symbol
 		(lib_id "Device:Antenna_Chip")
-		(at 139.7 87.63 0)
+		(at 144.78 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11715,7 +11978,7 @@
 		(fields_autoplaced yes)
 		(uuid "5640e953-fce5-4cc2-80df-c63a5f7c83d4")
 		(property "Reference" "AE1"
-			(at 144.78 83.8199 0)
+			(at 149.86 82.5499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11724,7 +11987,7 @@
 			)
 		)
 		(property "Value" "Antenna_Chip 7000AT18A1600001E"
-			(at 144.78 86.3599 0)
+			(at 149.86 85.0899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11732,8 +11995,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 137.16 83.185 0)
+		(property "Footprint" "RF_Antenna:Johanson_2450AT18x100"
+			(at 142.24 81.915 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11742,7 +12005,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 137.16 83.185 0)
+			(at 142.24 81.915 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11751,7 +12014,7 @@
 			)
 		)
 		(property "Description" "Ceramic chip antenna with pin for PCB trace"
-			(at 139.7 87.63 0)
+			(at 144.78 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12257,7 +12520,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 96.52 55.88 0)
 			(effects
 				(font
@@ -12525,7 +12788,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 22.86 53.34 0)
 			(effects
 				(font
@@ -12562,6 +12825,71 @@
 			(project "TMDT1UC1"
 				(path "/7e70e283-abbb-484b-a110-f07ee4f07f76"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 299.72 220.98 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6a742d2c-16b6-4eb8-9e37-83d722009f20")
+		(property "Reference" "H3"
+			(at 298.45 214.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 298.45 217.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 299.72 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 299.72 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 299.72 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e026a9e0-7d55-4fe0-ab3a-5c61c22871fe")
+		)
+		(instances
+			(project "TMDT1UC1"
+				(path "/7e70e283-abbb-484b-a110-f07ee4f07f76"
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -12925,7 +13253,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 238.76 76.2 0)
 			(effects
 				(font
@@ -12968,17 +13296,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 142.24 119.38 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 320.04 220.98 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "86becb6a-2001-41b3-b370-80f14f9840aa")
-		(property "Reference" "C27"
-			(at 144.78 118.1162 0)
+		(uuid "80802c32-1e6b-4e3a-8da1-ed3e721add05")
+		(property "Reference" "H4"
+			(at 323.85 219.7099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12986,8 +13314,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10p RF/DCBLOCK"
-			(at 144.78 120.6562 0)
+		(property "Value" "MountingHole_Pad"
+			(at 323.85 222.2499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12995,8 +13323,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 142.24 119.38 0)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 320.04 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13005,7 +13333,71 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 142.24 119.38 0)
+			(at 320.04 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 320.04 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc685e11-4417-446a-beed-5845b33e1534")
+		)
+		(instances
+			(project "TMDT1UC1"
+				(path "/7e70e283-abbb-484b-a110-f07ee4f07f76"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 154.94 142.24 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "86becb6a-2001-41b3-b370-80f14f9840aa")
+		(property "Reference" "C27"
+			(at 154.94 138.684 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2p RF/DCBLOCK"
+			(at 155.194 145.542 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 154.94 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 154.94 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13014,7 +13406,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 142.24 119.38 0)
+			(at 154.94 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13145,7 +13537,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 43.18 53.34 0)
 			(effects
 				(font
@@ -13281,7 +13673,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 228.6 40.64 0)
 			(effects
 				(font
@@ -13351,7 +13743,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 45.72 152.4 0)
 			(effects
 				(font
@@ -13487,7 +13879,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 81.28 203.2 0)
 			(effects
 				(font
@@ -13621,7 +14013,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 107.95 51.562 90)
 			(effects
 				(font
@@ -13757,7 +14149,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 53.34 53.34 0)
 			(effects
 				(font
@@ -13893,7 +14285,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 276.86 76.2 0)
 			(effects
 				(font
@@ -13963,7 +14355,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 148.59 43.18 0)
 			(effects
 				(font
@@ -14033,7 +14425,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 248.92 172.72 0)
 			(effects
 				(font
@@ -14142,6 +14534,71 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 299.72 210.82 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c428f865-ae50-4c66-ae0a-db99782b7f52")
+		(property "Reference" "H1"
+			(at 298.45 204.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 298.45 207.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 299.72 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 299.72 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 299.72 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cae09635-0ca7-48f1-9a62-0278b45a32b7")
+		)
+		(instances
+			(project ""
+				(path "/7e70e283-abbb-484b-a110-f07ee4f07f76"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 218.44 40.64 0)
 		(unit 1)
@@ -14169,7 +14626,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 218.44 40.64 0)
 			(effects
 				(font
@@ -14239,7 +14696,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 40.64 88.9 0)
 			(effects
 				(font
@@ -14309,7 +14766,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 309.88 119.38 0)
 			(effects
 				(font
@@ -14706,7 +15163,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 63.5 53.34 0)
 			(effects
 				(font
@@ -14880,7 +15337,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 55.88 93.98 0)
 			(effects
 				(font
@@ -14991,72 +15448,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 137.16 91.44 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d7736d21-9f69-4451-b2ea-b53a8e562b29")
-		(property "Reference" "#PWR020"
-			(at 137.16 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 137.16 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 137.16 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 137.16 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 137.16 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f5f70557-99a9-4a5d-ba54-dabd22b5f800")
-		)
-		(instances
-			(project "TMDT1UC1"
-				(path "/7e70e283-abbb-484b-a110-f07ee4f07f76"
-					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 170.18 139.7 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15115,6 +15506,72 @@
 			(project "TMDT1UC1"
 				(path "/7e70e283-abbb-484b-a110-f07ee4f07f76"
 					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 309.88 223.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d9e8edf7-0de6-4e21-bd9a-19f26cd5b868")
+		(property "Reference" "#PWR010"
+			(at 309.88 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 309.88 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 309.88 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 309.88 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 309.88 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5b9d7be6-844a-456d-ab24-4e8f811fe7aa")
+		)
+		(instances
+			(project ""
+				(path "/7e70e283-abbb-484b-a110-f07ee4f07f76"
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -15371,7 +15828,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 257.81 76.2 0)
 			(effects
 				(font
@@ -15441,7 +15898,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 218.44 76.2 0)
 			(effects
 				(font

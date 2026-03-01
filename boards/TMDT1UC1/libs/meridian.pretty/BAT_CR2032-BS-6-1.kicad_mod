@@ -445,7 +445,7 @@
 		(uuid "6257953f-ee51-44b8-b7cd-262840e6d80c")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/../libs/3dshapes/CR2032-BS-6-1.step"
+	(model "${KIPRJMOD}/libs/3dshapes/CR2032-BS-6-1.step"
 		(offset
 			(xyz 0 0 0)
 		)
